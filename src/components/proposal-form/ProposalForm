@@ -1,0 +1,118 @@
+import React from "react";
+
+
+
+
+const ProposalForm = () => {
+    
+
+  return (
+    
+      <section class="w-[90%] md:w-[80%] mx-auto py-10 bg-white">
+        <div className="grid grid-cols-2 ">
+          <div className="bg-[#D5E5DF]">
+            <h1 className="text-[#091913] font-extrabold leading-10">
+              Create an account to
+              <br />
+              get started
+            </h1>
+          </div>
+          <div>
+            <form >
+              <div class="mb-1">
+                <label
+                  class="block text-[#06214A] text-sm font-bold mb-2"
+                  for="emailaddress"
+                >
+                  Email address
+                </label>
+                <input
+                  class="bg-white border-[#06214A] border-2 rounded w-full py-2 px-3 text-[#020C17] leading-tight focus:outline-none focus:shadow-outline"
+                  id="emailaddress"
+                  type="email"
+                  placeholder="Add your email address"
+                  required
+                > </input>
+              </div>
+              <div class="mb-1">
+                <label
+                  class="block text-[#06214A] text-sm font-bold mb-2"
+                  for="password"
+                >
+                  Password
+                </label>
+                <input
+                  class="bg-white border-[#06214A] border-2 rounded w-full py-2 px-3 text-[#020C17] leading-tight focus:outline-none focus:shadow-outline"
+                  id="password"
+                  type="password"
+                  placeholder="********"
+                  required
+                >
+                  {" "}
+                </input>
+              </div>
+              <div class="mb-1">
+                <label
+                  class="block text-[#06214A] text-sm font-bold mb-2"
+                  for="name"
+                >
+                  Name 
+                </label>
+                <input
+                  class="bg-white border-[#06214A] border-2 rounded w-full py-2 px-3 text-[#020C17] leading-tight focus:outline-none focus:shadow-outline"
+                   id="name"
+                  type="text"
+                  placeholder="E.g Naomi Roberts"
+                  required
+                >
+                  {" "}
+                </input>
+              </div>
+              <div class="mb-1">
+                <label
+                  class="block text-[#06214A] text-sm font-bold mb-2"
+                  for="country"
+                >
+                  Country of residence
+                </label>
+                <input
+                  class="bg-white border-[#06214A] border-2 rounded w-full py-2 px-3 text-[#020C17] leading-tight focus:outline-none focus:shadow-outline"
+                  id="country"
+                  type="text"
+                  placeholder="E.g Ghana"
+                  required
+                >
+                  {" "}
+                </input>
+              </div>
+              <div class="mb-1">
+                <label
+                  class="block text-white text-sm font-bold mb-2"
+                  for="school"
+                >
+                  Name of school
+                </label>
+                <input
+                  class="bg-[#E6DDF8] border-[#E6DDF8] border-2 rounded w-full py-2 px-3 text-[#020C17] leading-tight focus:outline-none focus:shadow-outline"
+                  id="school"
+                  type="text"
+                  placeholder="E.g Obafemi Awolowo University"
+                  required
+                ></input>
+              </div>
+             
+              <button
+                type="submit"
+                className="w-full px-8 py-2 mb-2 font-semibold rounded-lg text-white bg-[#2B7C5F] hover:bg-blue-700"
+               >
+                Next
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      
+  );
+};
+
+export default ProposalForm;
