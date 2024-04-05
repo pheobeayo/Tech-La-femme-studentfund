@@ -54,7 +54,7 @@ function Footer() {
               <img alt="whitelogo" src={whitelogo} className="mx-12"/>
             </div>
             <h1 className="text-opacity-90  text-white text-[10px] md:text-[18px]/[26px] font-bold">
-              StudFund
+              StudentFund
             </h1>
             <p className="text-opacity-90 py-[15px] text-white text-[10px] md:text-[18px]/[26px] font-normal">
               Empowering Minds, Empowering Futures
