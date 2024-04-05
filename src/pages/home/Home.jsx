@@ -12,6 +12,7 @@ import Footer from "../../components/footer/Footer";
 const Home = () => {
   return (
     <main className="bg-white h-screen">
+      
      
       <section className="w-[100vw] md:w-[100%]   h-[100vh] bg-white">
         <div className="w-100 md:w-[100%] lg:p-16 p-4 h-[50vh] lg:gap-0 gap-4">
@@ -27,7 +28,7 @@ const Home = () => {
             </h3>
             <div className="flex item-centre gap-8 md:mx-40">
               <Link
-                to="/submit-proposal"
+                to="/create-proposal"
                 style={{ textDecoration: "none", color: "white" }}
               >
                 
@@ -41,7 +42,7 @@ const Home = () => {
               >
                 {" "}
                 <button class="bg-[#E6CB55] hover:bg-[#2B7C5F] text-[#091913] font-bold py-2 px-4 border border-[#E6CB55] rounded">
-                  Buy Products{" "}
+                  Fund a Proposal{" "}
                 </button>
               </Link>
             </div>
