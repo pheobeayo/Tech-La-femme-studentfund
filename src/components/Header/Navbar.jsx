@@ -33,11 +33,11 @@ const Navbar = () => {
           </ul>
          
 
-            
+          <w3m-button /> 
 
-          <button class="bg-[#2B7C5F] hover:bg-[#E6CB55] text-white font-bold py-2 px-4 rounded">
-          Connect Wallet
-          </button>
+          {/* <button class="bg-[#2B7C5F] hover:bg-[#E6CB55] text-white font-bold py-2 px-4 rounded"> */}
+          {/* Connect Wallet */}
+          {/* </button> */}
           {/* Mobile Hamburger Menu */}
           <div className="tab:hidden">
             <button onClick={handleMobileMenu}>
