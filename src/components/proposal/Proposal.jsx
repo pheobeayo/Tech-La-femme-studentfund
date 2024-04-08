@@ -64,7 +64,7 @@ const Proposal = () => {
                 accurate experiments.
               </p>
               <div className="w-full bg-[#D5E5DF]">
-                <button class="bg-[#D5E5DF] hover:bg-[#427142] text-[#091913] font-bold py-2 px-4 border border-[#AAAAAA] rounded w-1/2  md:mx-16">
+                <button class="bg-[#D5E5DF] hover:bg-[#427142] text-[#091913] font-bold py-2 px-4 border border-[#AAAAAA] rounded w-1/2 mt-4 mb-4 md:mx-16">
                   View details
                 </button>
               </div>
@@ -93,7 +93,7 @@ const Proposal = () => {
                 programming.
               </p>
               <div className="w-full bg-[#D5E5DF]">
-                <button class="bg-[#D5E5DF] hover:bg-[#427142] text-[#091913] font-bold py-2 px-4 border border-[#AAAAAA] rounded w-1/2 md:mx-16">
+                <button class="bg-[#D5E5DF] hover:bg-[#427142] text-[#091913] font-bold py-2 px-4 border border-[#AAAAAA] rounded w-1/2 mt-4 mb-4 md:mx-16">
                   View details
                 </button>
               </div>
