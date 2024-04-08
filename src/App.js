@@ -12,12 +12,12 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 const queryClient = new QueryClient()
 
 // 1. Get projectId at https://cloud.walletconnect.com
-const projectId = 'YOUR_PROJECT_ID'
+const projectId = '79f159858de988bfc7547f781a180424'
 
 
 const metadata = {
-  name: 'Web3Modal',
-  description: 'Web3Modal Example',
+  name: 'studendfund',
+  description: 'fundingapp',
   url: 'https://web3modal.com', // origin must match your domain & subdomain
   icons: ['https://avatars.githubusercontent.com/u/37784886']
 }

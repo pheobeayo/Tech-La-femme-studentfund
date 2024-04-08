@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
+import Checkbox from "../../components/checkbox/Checkbox";
 
 const CreateProposal = () => {
+  const [checked, setChecked] = useState(false);
+  const onChange = () => {
+    setChecked(!checked);
+  };
+
   return (
     <main class="w-[100vw] h-[100vh]">
       <section class="w-screen h-full">
@@ -103,13 +109,22 @@ const CreateProposal = () => {
                   required
                 ></input>
               </div>
+              <div>
+                <Checkbox
+                  id="checkbox"
+                  label="I agree to StudentFund’s Terms of Service "
+                  value={checked}
+                  onChange={onChange}
+                  fontSize="0.5rem"
+                />
+              </div>
               <div className="mt-4">
-              <button
-                type="submit"
-                className="w-full px-8 py-2 mb-2 font-semibold rounded-lg text-white bg-[#2B7C5F] hover:bg-blue-700"
-              >
-                Next
-              </button>
+                <button
+                  type="submit"
+                  className="w-full px-8 py-2 mb-2 font-semibold rounded-lg text-white bg-[#2B7C5F] hover:bg-blue-700"
+                >
+                  Next
+                </button>
               </div>
             </form>
           </div>
