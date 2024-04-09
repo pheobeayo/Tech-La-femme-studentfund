@@ -3,7 +3,7 @@ import Footer from "../../components/footer/Footer";
 import urgent from "../../assets/urgent.svg";
 import laptop from "../../assets/laptop.svg";
 
-const ProjectDetails = () => {
+const StudentProjectDetails = () => {
   return (
     <main class="w-[100vw] h-[100vh]">
       <section class="w-screen h-full">
@@ -65,7 +65,7 @@ const ProjectDetails = () => {
                     </h2>
 
                     <button class="bg-[#2B7C5F] hover:bg-[#2B7C5F] text-white font-bold py-2 px-4 border border-[#AAAAAA] rounded w-3/4 md:mx-8 mb-4">
-                      Fund
+                      Withdraw
                     </button>
                   </div>
                 </div>
@@ -73,7 +73,7 @@ const ProjectDetails = () => {
               <div className="mx-12">
                 <h1 className="font-bold text-xs font-serif">Funders</h1>
                 <h2 className="font-normal text-xs font-serif">
-                  Maxcom <span class="mx-28">$3 </span>
+                  Maxcom <span class="mx-[112px]">$3 </span>
                 </h2>
                 <h2 className="font-normal text-xs font-serif">
                   Philip Stone <span class="mx-24">$2</span>
@@ -95,4 +95,4 @@ const ProjectDetails = () => {
   );
 };
 
-export default ProjectDetails;
+export default StudentProjectDetails;
