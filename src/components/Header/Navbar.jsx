@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <nav class="bg-white">
-      <div className="fixed top-0 right-0 left-0 bg-gradient z-50">
+      <div className="fixed top-0 right-0 left-0 bg-gradient z-50 bg-white p-2 border-y ">
         <div className="flex gap-2 justify-center items-center px-10 pt-8 pr-10">
           <img src={logo} alt="logo" />
 

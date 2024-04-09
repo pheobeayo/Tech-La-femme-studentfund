@@ -10,10 +10,10 @@ const How = () => {
                     How to Navigate
                 </h1>
                 <h2 className="text-[#091913] text-2xl font-normal mb-2 mt-2">
-                    Welcome to StudFund
+                    Welcome to StudentFund
                 </h2>
                 <h3 className="text-[#091913] text-3xl font-bold">
-                    How to Navigate StudFund
+                    How to Navigate StudentFund
                 </h3>
                 <div className="bg-white grid-cols-4 gap-4 md:flex md:flex-row">
                     <div className="content-card w-full md:w-[32%] mb-5 h-full rounded-t-lg px-8 mt-10 mx-10 shadow-md">

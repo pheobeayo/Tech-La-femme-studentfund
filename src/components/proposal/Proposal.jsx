@@ -2,6 +2,7 @@ import React from "react";
 import urgent from "../../assets/urgent.svg";
 import research1 from "../../assets/research1.svg";
 import research2 from "../../assets/research2.svg";
+import { Link } from "react-router-dom";
 
 const Proposal = () => {
   return (
@@ -34,9 +35,30 @@ const Proposal = () => {
               </p>
               <div>
                 <div className="w-full h-full bg-[#D5E5DF]">
-                  <button class="bg-[#D5E5DF] hover:bg-[#427142] text-[#091913] font-bold py-2 px-4 border border-[#AAAAAA] rounded w-1/2 md:mx-16 mt-4 mb-4">
-                    View details
-                  </button>
+                  <h1 className="text-[#091913] text-justify font-bold text-xs p-2 mt-4">
+                    25 USDT<span className="mx-12 ">4</span>
+                    <span className="mx-8">30</span>
+                  </h1>
+                  <h1 className="text-[#091913] text-justify font-normal text-xs p-2">
+                    Goal<span className="mx-12">Funders</span>
+                    <span>Days left</span>
+                  </h1>
+                  <div className=" bg-white border-[#2B7C5F]  rounded-full w-3/4 h-2 mx-2 mt-2 ">
+                    <div className=" bg-[#2B7C5F] border-[#2B7C5F]  rounded-full w-1/2 h-2 "></div>
+                  </div>
+                  <h2 className="text-[#091913] text-justify font-normal text-xs mx-4">
+                    10 USDT Amount raised
+                    <br />
+                    20 USDT Amount needed
+                  </h2>
+                  <Link
+                    to="/fund"
+                    style={{ textDecoration: "none", color: "white" }}
+                  >
+                    <button class="bg-[#D5E5DF] hover:bg-[#427142] text-[#091913] font-bold py-2 px-4 border border-[#AAAAAA] rounded w-1/2 md:mx-16 mt-4 mb-4">
+                      View details
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -64,9 +86,30 @@ const Proposal = () => {
                 accurate experiments.
               </p>
               <div className="w-full bg-[#D5E5DF]">
-                <button class="bg-[#D5E5DF] hover:bg-[#427142] text-[#091913] font-bold py-2 px-4 border border-[#AAAAAA] rounded w-1/2 mt-4 mb-4 md:mx-16">
-                  View details
-                </button>
+                <h1 className="text-[#091913] text-justify font-bold text-xs p-2 mt-4">
+                  1500 USDT<span className="mx-9">4</span>
+                  <span className="mx-8">30</span>
+                </h1>
+                <h1 className="text-[#091913] text-justify font-normal text-xs p-2">
+                  Goal<span className="mx-12">Funders</span>
+                  <span>Days left</span>
+                </h1>
+                <div className=" bg-white border-[#2B7C5F]  rounded-full w-3/4 h-2 mx-2 mt-2 ">
+                  <div className=" bg-[#2B7C5F] border-[#2B7C5F]  rounded-full w-1/2 h-2 "></div>
+                </div>
+                <h2 className="text-[#091913] text-justify font-normal text-xs mx-4">
+                  250 USDT Amount raised
+                  <br />
+                  1500 USDT Amount needed
+                </h2>
+                <Link
+                  to="/fund"
+                  style={{ textDecoration: "none", color: "white" }}
+                >
+                  <button class="bg-[#D5E5DF] hover:bg-[#427142] text-[#091913] font-bold py-2 px-4 border border-[#AAAAAA] rounded w-1/2 mt-4 mb-4 md:mx-16">
+                    View details
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -93,9 +136,30 @@ const Proposal = () => {
                 programming.
               </p>
               <div className="w-full bg-[#D5E5DF]">
-                <button class="bg-[#D5E5DF] hover:bg-[#427142] text-[#091913] font-bold py-2 px-4 border border-[#AAAAAA] rounded w-1/2 mt-4 mb-4 md:mx-16">
-                  View details
-                </button>
+                <h1 className="text-[#091913] text-justify font-bold text-xs p-2 mt-4">
+                  800 USDT<span className="mx-9 ">4</span>
+                  <span className="mx-8">30</span>
+                </h1>
+                <h1 className="text-[#091913] text-justify font-normal text-xs p-2">
+                  Goal<span className="mx-12">Funders</span>
+                  <span>Days left</span>
+                </h1>
+                <div className=" bg-white border-[#2B7C5F]  rounded-full w-3/4 h-2 mx-2 mt-2 ">
+                  <div className=" bg-[#2B7C5F] border-[#2B7C5F]  rounded-full w-1/2 h-2 "></div>
+                </div>
+                <h2 className="text-[#091913] text-justify font-normal text-xs mx-4">
+                  100 USDT Amount raised
+                  <br />
+                  800 USDT Amount needed
+                </h2>
+                <Link
+                  to="/fund"
+                  style={{ textDecoration: "none", color: "white" }}
+                >
+                  <button class="bg-[#D5E5DF] hover:bg-[#427142] text-[#091913] font-bold py-2 px-4 border border-[#AAAAAA] rounded w-1/2 mt-4 mb-4 md:mx-16">
+                    View details
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

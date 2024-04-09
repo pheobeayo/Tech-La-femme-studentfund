@@ -16,10 +16,8 @@ const SubmitProposal = () => {
                 <br />
                 to your educational needs.
               </h2>
-              <div class=" bg-[#2B7C5F]  grid grid-cols-3 divide-x divide-[#2B7C5F] divide-solid h-full border border-white rounded-2xl w-1/2 mt-2 ">
-                <div className=" ">1</div>
-                <div className=" ">2</div>
-                <div className=" ">3</div>
+              <div className=" bg-[#2B7C5F] border-[#2B7C5F]  rounded-full w-3/4 mt-2 ">
+                <h1 className='text-white mx-36'>Step 3 of 3</h1>
               </div>
               <h3 className="text-[#091913] font-normal text-base mt-2">
                 Step 3 of 3
@@ -71,9 +69,10 @@ const SubmitProposal = () => {
                 ></input>
               </div>
               <p className="text-[#020C17] text-base">
-                E.g For tuition fee (an invoice) 
+                E.g For tuition fee (an invoice)
                 <br />A broken laptop (add a picture)
-                <br />Please note that this will be displayed on the landing page
+                <br />
+                Please note that this will be displayed on the landing page
               </p>
               <div class="mb-2">
                 <label
