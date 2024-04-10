@@ -5,8 +5,8 @@ const SubmitProposal = () => {
   return (
     <main class="w-[100vw] h-[100vh]">
       <section class="w-screen h-full">
-        <div className="grid grid-cols-2 h-full mt-4">
-          <div className="bg-[#D5E5DF]">
+        <div className="grid grid-cols-2 h-full mt-4  md:flex md:flex-row">
+          <div className="bg-[#D5E5DF] w-1/2">
             <div className="mt-48 mx-20">
               <h1 className="text-[#091913] font-extrabold text-4xl leading-10">
                 You’re almost there
@@ -17,7 +17,7 @@ const SubmitProposal = () => {
                 to your educational needs.
               </h2>
               <div className=" bg-[#2B7C5F] border-[#2B7C5F]  rounded-full w-3/4 mt-2 ">
-                <h1 className='text-white mx-36'>Step 3 of 3</h1>
+                <h1 className='text-white mx-24 text-xs'>Step 3 of 3</h1>
               </div>
               <h3 className="text-[#091913] font-normal text-base mt-2">
                 Step 3 of 3
@@ -76,7 +76,7 @@ const SubmitProposal = () => {
               </p>
               <div class="mb-2">
                 <label
-                  class="block text-[#06214A] text-base font-bold mb-2"
+                  class="block text-[#06214A] text-base font-medium mb-2"
                   for="email"
                 >
                   Email of an authority for confirmation
