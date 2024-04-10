@@ -18,7 +18,7 @@ const Hero = () => {
           <br />
           Transforming Education Through Blockchain
         </h3>
-        <div className="flex item-centre gap-8 md:mx-40">
+        <div className="grid grid-cols-2 gap-8 md:mx-40">
           <Link
             to="/create-proposal"
             style={{ textDecoration: "none", color: "white" }}
@@ -41,8 +41,8 @@ const Hero = () => {
       </div>
     </div>
 
-    <div className="grid grid-cols-2 gap-0 md:mx-40 mt-16">
-      <img src={heroimage2} alt="heroimage1" className="mt-24" />
+    <div className="grid grid-cols-2 gap-10 md:mx-48 mt-16 md:flex md:flex-row">
+      <img src={heroimage2} alt="heroimage1" className="md:mt-24" />
       <img src={heroimage1} alt="heroimage2" />
     </div>
   </section>

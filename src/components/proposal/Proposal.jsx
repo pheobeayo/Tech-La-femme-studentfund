@@ -12,7 +12,7 @@ const Proposal = () => {
           Proposals available to be funded
         </h2>
         <div className="bg-white grid-cols-4 gap-4 md:flex md:flex-row">
-          <div className="content-card w-full md:w-[32%] mb-5 h-full rounded-t-lg px-8 mt-10 mx-10">
+          <div className="content-card w-full md:w-[32%] mb-5 h-full rounded-t-lg px-8 mt-10 md:mx-10">
             <img
               src={urgent}
               alt="urgent"
