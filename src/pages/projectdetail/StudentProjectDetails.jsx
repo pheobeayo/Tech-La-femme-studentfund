@@ -7,8 +7,8 @@ const StudentProjectDetails = () => {
   return (
     <main class="w-[100vw] h-[100vh]">
       <section class="w-screen h-full">
-        <div className="grid grid-cols-2 h-full mt-20">
-          <div className="mx-16">
+        <div className="grid grid-cols-2 h-full mt-20 md:flex md:flex-row">
+          <div className="mx-16  w-1/2">
             <img src={laptop} alt="laptop" />
             <p className="text-[#091913] text-base font-normal mt-4">
               Description: Hi, my name is Sarah, and I'm a second-year student
@@ -37,7 +37,7 @@ const StudentProjectDetails = () => {
             </h1>
           </div>
           <div className="mx-16">
-            <div className="max-w-sm rounded overflow-hidden shadow-lg w-full md:w-3/4 mb-5 h-3/4">
+            <div className="max-w-sm rounded overflow-hidden shadow-lg w-full md:w-full mb-5 h-3/4">
               <img src={urgent} alt="urgent" className="w-full" />
 
               <h3 className="font-bold text-[#091913] text-sm mx-4">
