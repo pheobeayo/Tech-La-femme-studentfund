@@ -16,7 +16,7 @@ const How = () => {
                     How to Navigate StudentFund
                 </h3>
                 <div className="bg-white grid-cols-4 gap-4 md:flex md:flex-row">
-                    <div className="content-card w-full md:w-[32%] mb-5 h-full rounded-t-lg px-8 mt-10 mx-10 shadow-md">
+                    <div className="content-card w-full md:w-[32%] mb-5 h-full rounded-t-lg px-8 mt-10 md:mx-10 shadow-md">
                         <img src={howimage} alt="howimage" />
                         <div className="w-full h-1/2">
                             <h3 className="text-[#091913] text-xl font-bold leading-loose ">
@@ -52,7 +52,7 @@ const How = () => {
                         </div>
                     </div>
 
-                    <div className="content-card w-full md:w-[32%] mb-5 h-full rounded-t-lg px-8 mt-10 shadow-md mx-8">
+                    <div className="content-card w-full md:w-[32%] mb-5 h-full rounded-t-lg px-8 mt-10 shadow-md md:mx-8">
                         <img src={howimage} alt="howimage" />
                         <div className="w-full h-1/2 p-1">
                             <h3 className="text-[#091913] text-xl font-bold leading-loose">
