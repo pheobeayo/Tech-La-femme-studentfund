@@ -3,7 +3,7 @@ import Footer from "../../components/footer/Footer";
 
 const SubmitProposal = () => {
   return (
-    <main class="w-[100vw] h-[100vh]">
+    <main class="relative w-[100vw] h-[100vh]">
       <section class="w-screen h-full">
         <div className="grid grid-cols-2 h-full mt-4  md:flex md:flex-row">
           <div className="bg-[#D5E5DF] w-1/2">
@@ -38,7 +38,7 @@ const SubmitProposal = () => {
                   id="large_size"
                   type="file"
                   placeholder="Upload a photograph of yourself"
-                ></input>
+                />
               </div>
               <div class="mb-2">
                 <label
@@ -52,7 +52,7 @@ const SubmitProposal = () => {
                   id="large_size"
                   type="file"
                   placeholder="Upload"
-                ></input>
+                />
               </div>
               <div class="mb-2">
                 <label
@@ -66,7 +66,7 @@ const SubmitProposal = () => {
                   id="large_size"
                   type="file"
                   placeholder="Add a picture"
-                ></input>
+                />
               </div>
               <p className="text-[#020C17] text-base">
                 E.g For tuition fee (an invoice)
@@ -87,7 +87,7 @@ const SubmitProposal = () => {
                   type="email"
                   placeholder="The email could be that of HOD, Admin office, etc"
                   required
-                ></input>
+                />
               </div>
 
               <div className="mt-4">

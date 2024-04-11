@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <main className="bg-white h-screen">
       <Hero />
-      <div className="mt-48">
+      <div className="mt-72">
         <How />
       </div>
       <div>

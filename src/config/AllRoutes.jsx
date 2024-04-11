@@ -15,7 +15,7 @@ const AllRoutes = () => {
   const SubmitProposal = lazy(() =>
     import("../pages/create-proposal/SubmitProposal")
   );
-  const Login = lazy(() => import("../pages/login/login"));
+  const Login = lazy(() => import("../pages/create-proposal/login"));
   const Aboutus = lazy(() => import("../pages/about-us/Aboutus"));
   const ProjectDetails = lazy(() => import("../pages/projectdetail/ProjectDetails"));
   const StudentProjectDetails = lazy(() => import("../pages/projectdetail/StudentProjectDetails"));

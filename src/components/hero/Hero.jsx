@@ -29,7 +29,7 @@ const Hero = () => {
             </button>
           </Link>
           <Link
-            to="/fund-proposal"
+            to="/fund"
             style={{ textDecoration: "none", color: "#427142" }}
           >
             {" "}
@@ -41,7 +41,7 @@ const Hero = () => {
       </div>
     </div>
 
-    <div className="grid grid-cols-2 gap-10 md:mx-48 mt-16 md:flex md:flex-row h-[90vh] w-[100vw]">
+    <div className="grid grid-cols-2 gap-10 md:mx-48 mt-16 sm:mt-32 md:flex md:flex-row h-[90vh] w-[100vw]">
       <img src={heroimage2} alt="heroimage1" className="md:mt-24 sm:mx-2" />
       <img src={heroimage1} alt="heroimage2" />
     </div>
