@@ -1,24 +1,39 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
+import Footer from "../../components/footer/Footer";
 
 
 
 
 
 const Login = () => {
+    const navigate = useNavigate();
+
+  const routeToNextPage = () => {
+    navigate("/secondcreate-proposal");
+  };
 
     return (
         <main class="w-[100vw] h-[100vh]">
         <section class="w-screen h-full">
         <div className="grid grid-cols-2 ">
             <div className="bg-[#D5E5DF]">
+            <div className="mt-48 mx-20">
                 <h1 className="text-[#091913] font-extrabold leading-10">
                 Login to continue
                 
                 </h1>
+                <div className=" bg-white border-[#2B7C5F]  rounded-full w-3/4 h-2 mt-2 ">
+                <div className=" bg-[#2B7C5F] border-[#2B7C5F]  rounded-full w-1/2 h-2 "></div>
+              </div>
+              <h3 className="text-[#091913] font-normal text-base mt-2">
+                Step 1 of 3
+              </h3>
+            </div>
             </div>
             <div>
-                <form className=" mx-20 mt-8 w-3/4" >
+                <form className=" mx-20 mt-48 w-3/4" >
                     <div class="mb-2">
                         <label
                             class="block text-[#06214A] text-base font-bold mb-2"
@@ -32,7 +47,7 @@ const Login = () => {
                             type="email"
                             placeholder="Add your email address"
                             required
-                        > </input>
+                        />
                     </div>
                     <div class="mb-2">
                         <label
@@ -47,14 +62,14 @@ const Login = () => {
                             type="password"
                             placeholder="********"
                             required
-                        >
-                            {" "}
-                        </input>
+                        />
+                
                     </div>
                     <div className="mt-4">
                     <button
                         type="submit"
-                        className="w-full px-8 py-2 mb-2 font-semibold rounded-lg text-white bg-[#2B7C5F] hover:bg-blue-700"
+                        className="w-full px-8 py-2 mb-2 font-semibold rounded-lg text-white bg-[#2B7C5F] hover:bg-[#D5E5DF]"
+                        onClick={routeToNextPage}
                     >
                         Next
                     </button>
@@ -64,6 +79,7 @@ const Login = () => {
             </div>
         </div>
         </section>
+        <Footer />
         </main>
 
 

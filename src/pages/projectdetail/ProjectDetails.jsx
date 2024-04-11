@@ -5,7 +5,7 @@ import laptop from "../../assets/laptop.svg";
 
 const ProjectDetails = () => {
   return (
-    <main class="w-[100vw] h-[100vh]">
+    <main class="relative w-[100vw] h-[100vh]">
       <section class="w-screen h-full">
         <div className="grid grid-cols-2 h-full mt-20  md:flex md:flex-row">
           <div className="mx-16 w-1/2">
