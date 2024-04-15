@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import logo from "../../assets/logo.svg";
 import { Link, NavLink } from "react-router-dom";
 import { AiOutlineClose } from "react-icons/ai";
+import { ConnectButton } from '@rainbow-me/rainbowkit';
 
 
 const Navbar = () => {
@@ -33,7 +34,7 @@ const Navbar = () => {
           </ul>
          
 
-          <w3m-button /> 
+          <ConnectButton /> 
 
           
           <div className="md:hidden">
