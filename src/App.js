@@ -1,55 +1,21 @@
-
 import React from "react";
 import AllRoutes from "./config/AllRoutes";
-import { createWeb3Modal } from '@web3modal/wagmi/react'
-import { defaultWagmiConfig } from '@web3modal/wagmi/react/config'
-
-import { WagmiProvider } from 'wagmi'
-import { arbitrum, mainnet } from 'wagmi/chains'
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
-
-// 0. Setup queryClient
-const queryClient = new QueryClient()
-
-// 1. Get projectId at https://cloud.walletconnect.com
-const projectId = '79f159858de988bfc7547f781a180424'
-
-
-const metadata = {
-  name: 'studendfund',
-  description: 'fundingapp',
-  url: 'https://web3modal.com', // origin must match your domain & subdomain
-  icons: ['https://avatars.githubusercontent.com/u/37784886']
-}
-
-const chains = [mainnet, arbitrum] 
-const config = defaultWagmiConfig({
-  chains,
-  projectId,
-  metadata,
-  
-})
 
 
 
-createWeb3Modal({
-  wagmiConfig: config,
-  projectId,
-  enableAnalytics: true, 
-  enableOnramp: true 
-})
+
+
+
 
 function App() {
   return (
 
 
-    <WagmiProvider config={config}>
-      <QueryClientProvider client={queryClient}>
+   
      <div>
     <AllRoutes />
     </div>
-    </QueryClientProvider>
-    </WagmiProvider>
+    
   );
 }
 
