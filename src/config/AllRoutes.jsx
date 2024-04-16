@@ -19,6 +19,9 @@ const AllRoutes = () => {
   const Aboutus = lazy(() => import("../pages/about-us/Aboutus"));
   const ProjectDetails = lazy(() => import("../pages/projectdetail/ProjectDetails"));
   const StudentProjectDetails = lazy(() => import("../pages/projectdetail/StudentProjectDetails"));
+ 
+
+
   return (
     <div>
       <Toaster />
@@ -37,6 +40,7 @@ const AllRoutes = () => {
               <Route path="/about-us" element={<Aboutus />} />
               <Route path="/fund" element={<ProjectDetails />} />
               <Route path="/student-details" element={<StudentProjectDetails />} />
+              
             </Routes>
           </Layout>
         </BrowserRouter>
