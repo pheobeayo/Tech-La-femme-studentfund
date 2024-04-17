@@ -18,8 +18,8 @@ const CreateProposal = () => {
   return (
     <main className="relative w-[100vw] h-[100vh]">
       <section className="w-screen h-full">
-        <div className="grid grid-cols-2 mt-4">
-          <div className="bg-[#D5E5DF]">
+        <div className="grid grid-cols-2 mt-4 md:flex md:flex-row sm:flex sm:flex-row">
+          <div className="bg-[#D5E5DF] w-1/2">
             <div className="mt-48 mx-20">
               <h1 className="text-[#091913] font-extrabold text-4xl leading-10">
                 Create an account to
@@ -35,7 +35,7 @@ const CreateProposal = () => {
             </div>
           </div>
           <div>
-            <form className=" mx-20 mt-8 w-3/4">
+            <form className=" mx-20 md:28 mt-8 w-3/4">
               <div className="mb-2">
                 <label
                   className="block text-[#06214A] text-base font-bold mb-2"

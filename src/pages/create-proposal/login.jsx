@@ -13,8 +13,8 @@ const Login = () => {
     return (
         <main class="w-[100vw] h-[100vh]">
             <section class="w-screen h-full">
-                <div className="grid grid-cols-2 ">
-                    <div className="bg-[#D5E5DF]">
+                <div className="grid grid-cols-2 md:flex md:flex-row sm:flex sm:flex-row">
+                    <div className="bg-[#D5E5DF] w-1/2">
                         <div className="mt-48 mx-20">
                             <h1 className="text-[#091913] font-extrabold leading-10">
                                 Login to continue
