@@ -36,6 +36,7 @@ const CreateProposal = () => {
           </div>
           <div>
             <form className=" mx-20 md:28 mt-8 w-3/4">
+           
               <div className="mb-2">
                 <label
                   className="block text-[#06214A] text-base font-bold mb-2"
@@ -58,6 +59,7 @@ const CreateProposal = () => {
                 >
                   Password
                 </label>
+                
                 <input
                   className="bg-white border-[#06214A] border-2 rounded w-full py-2 px-3 text-[#020C17] leading-tight focus:outline-none focus:shadow-outline"
                   id="password"
@@ -109,6 +111,20 @@ const CreateProposal = () => {
                   type="text"
                   placeholder="E.g Obafemi Awolowo University"
                   required
+                />
+              </div>
+              <div class="mb-2">
+                <label
+                  class="block mb-2 text-base font-medium text-[#06214A] dark:text-[#06214A]"
+                  for="large_size"
+                >
+                  Upload your Transcript
+                </label>
+                <input
+                  class="block w-full text-base text-[#020C17] border border-[#06214A] rounded-lg cursor-pointer bg-white dark:text-[#020C17] focus:outline-none dark:bg-white dark:border-gray-600 dark:placeholder-gray-400"
+                  id="large_size"
+                  type="file"
+                  placeholder="Upload"
                 />
               </div>
               <div>
