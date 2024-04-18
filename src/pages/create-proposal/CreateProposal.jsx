@@ -30,7 +30,7 @@ const CreateProposal = () => {
                 <div className=" bg-[#2B7C5F] border-[#2B7C5F]  rounded-full w-1/2 h-2 "></div>
               </div>
               <h3 className="text-[#091913] font-normal text-base mt-2">
-                Step 1 of 3
+                Step 1 of 2
               </h3>
             </div>
           </div>
