@@ -47,23 +47,33 @@
 		"inputs": [
 			{
 				"internalType": "string",
+				"name": "_title",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
 				"name": "_description",
 				"type": "string"
 			},
 			{
 				"internalType": "uint256",
-				"name": "_imageIPFSHashTranscript",
+				"name": "_amount",
 				"type": "uint256"
 			},
 			{
-				"internalType": "uint256",
-				"name": "_amount",
-				"type": "uint256"
+				"internalType": "string",
+				"name": "_imageIPFSHash",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_referral",
+				"type": "string"
 			}
 		],
 		"name": "createProposal",
 		"outputs": [],
-		"stateMutability": "nonpayable",
+		"stateMutability": "payable",
 		"type": "function"
 	},
 	{
@@ -87,9 +97,9 @@
 				"type": "uint256"
 			},
 			{
-				"internalType": "address",
-				"name": "_student",
-				"type": "address"
+				"internalType": "uint256",
+				"name": "_proposalId",
+				"type": "uint256"
 			}
 		],
 		"name": "donate",
@@ -101,7 +111,7 @@
 		"inputs": [
 			{
 				"internalType": "address",
-				"name": "token",
+				"name": "nativeToken",
 				"type": "address"
 			}
 		],
@@ -287,7 +297,7 @@
 		],
 		"name": "registerStudent",
 		"outputs": [],
-		"stateMutability": "nonpayable",
+		"stateMutability": "payable",
 		"type": "function"
 	},
 	{
@@ -382,9 +392,9 @@
 			},
 			{
 				"indexed": true,
-				"internalType": "uint256",
+				"internalType": "string",
 				"name": "imageIPFSHash",
-				"type": "uint256"
+				"type": "string"
 			}
 		],
 		"name": "StudentRegistered",
@@ -470,38 +480,6 @@
 		"inputs": [
 			{
 				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"name": "donor",
-		"outputs": [
-			{
-				"internalType": "address",
-				"name": "",
-				"type": "address"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [],
-		"name": "getDonors",
-		"outputs": [
-			{
-				"internalType": "address[]",
-				"name": "",
-				"type": "address[]"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "uint256",
 				"name": "_proposalId",
 				"type": "uint256"
 			}
@@ -526,19 +504,29 @@
 						"type": "string"
 					},
 					{
+						"internalType": "string",
+						"name": "title",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "referral",
+						"type": "string"
+					},
+					{
 						"internalType": "enum FundStudent.ProposalStatus",
 						"name": "status",
 						"type": "uint8"
 					},
 					{
-						"internalType": "uint256",
-						"name": "imageIPFSHashTranscript",
-						"type": "uint256"
+						"internalType": "string",
+						"name": "imageIPFSHash",
+						"type": "string"
 					},
 					{
-						"internalType": "uint256",
-						"name": "deadline",
-						"type": "uint256"
+						"internalType": "string",
+						"name": "imageIPFSHashTranscript",
+						"type": "string"
 					},
 					{
 						"internalType": "uint256",
@@ -559,16 +547,86 @@
 						"internalType": "bool",
 						"name": "disbursed",
 						"type": "bool"
-					},
-					{
-						"internalType": "bool",
-						"name": "isStudent",
-						"type": "bool"
 					}
 				],
 				"internalType": "struct FundStudent.Proposal",
 				"name": "",
 				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getProposals",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "proposalId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "student",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "description",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "title",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "referral",
+						"type": "string"
+					},
+					{
+						"internalType": "enum FundStudent.ProposalStatus",
+						"name": "status",
+						"type": "uint8"
+					},
+					{
+						"internalType": "string",
+						"name": "imageIPFSHash",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "imageIPFSHashTranscript",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "isRegistered",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "approved",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "disbursed",
+						"type": "bool"
+					}
+				],
+				"internalType": "struct FundStudent.Proposal[]",
+				"name": "",
+				"type": "tuple[]"
 			}
 		],
 		"stateMutability": "view",
@@ -652,6 +710,80 @@
 		"type": "function"
 	},
 	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "proposalByAddress",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "proposalId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "student",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "description",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "title",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "referral",
+				"type": "string"
+			},
+			{
+				"internalType": "enum FundStudent.ProposalStatus",
+				"name": "status",
+				"type": "uint8"
+			},
+			{
+				"internalType": "string",
+				"name": "imageIPFSHash",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "imageIPFSHashTranscript",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bool",
+				"name": "isRegistered",
+				"type": "bool"
+			},
+			{
+				"internalType": "bool",
+				"name": "approved",
+				"type": "bool"
+			},
+			{
+				"internalType": "bool",
+				"name": "disbursed",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
 		"inputs": [],
 		"name": "proposalCount",
 		"outputs": [
@@ -703,19 +835,29 @@
 				"type": "string"
 			},
 			{
+				"internalType": "string",
+				"name": "title",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "referral",
+				"type": "string"
+			},
+			{
 				"internalType": "enum FundStudent.ProposalStatus",
 				"name": "status",
 				"type": "uint8"
 			},
 			{
-				"internalType": "uint256",
-				"name": "imageIPFSHashTranscript",
-				"type": "uint256"
+				"internalType": "string",
+				"name": "imageIPFSHash",
+				"type": "string"
 			},
 			{
-				"internalType": "uint256",
-				"name": "deadline",
-				"type": "uint256"
+				"internalType": "string",
+				"name": "imageIPFSHashTranscript",
+				"type": "string"
 			},
 			{
 				"internalType": "uint256",
@@ -735,11 +877,6 @@
 			{
 				"internalType": "bool",
 				"name": "disbursed",
-				"type": "bool"
-			},
-			{
-				"internalType": "bool",
-				"name": "isStudent",
 				"type": "bool"
 			}
 		],

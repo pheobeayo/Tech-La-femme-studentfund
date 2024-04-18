@@ -1,14 +1,23 @@
 import { createWeb3Modal, defaultConfig } from "@web3modal/ethers/react";
 
-export const SUPPORTED_CHAIN = 2710;
+export const SUPPORTED_CHAIN = 11155111;
 
-const morph = {
+const sepolia = {
     chainId: SUPPORTED_CHAIN,
-    name: "Morph",
+    name: "Sepolia",
     currency: "ETH",
-    explorerUrl: "https://explorer-testnet.morphl2.io",
+    explorerUrl: "https://sepolia.etherscan.io",
     rpcUrl: process.env.REACT_APP_RPC_URL,
 };
+// export const SUPPORTED_CHAIN = 2710;
+
+// const morph = {
+//     chainId: SUPPORTED_CHAIN,
+//     name: "Morph",
+//     currency: "ETH",
+//     explorerUrl: "https://explorer-testnet.morphl2.io",
+//     rpcUrl: process.env.REACT_APP_RPC_URL,
+// };
 
 const metadata = {
     name: "My Website",
@@ -20,7 +29,7 @@ const metadata = {
 export const configureWeb3Modal = () =>
     createWeb3Modal({
         ethersConfig: defaultConfig({ metadata }),
-        chains: [morph],
+        chains: [sepolia],
         projectId: process.env.REACT_APP_PROJECTID,
         enableAnalytics: false, // Optional - defaults to your Cloud configuration
         themeVariables: {

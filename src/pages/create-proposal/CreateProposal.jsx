@@ -1,18 +1,59 @@
 import React, { useState } from "react";
 import Checkbox from "../../components/checkbox/Checkbox";
-import { useNavigate } from "react-router-dom";
 import Footer from "../../components/footer/Footer";
+import axios from 'axios';
+import useRegStudent from "../../hooks/useRegStudent";
 
 const CreateProposal = () => {
   const [checked, setChecked] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [selectedFile, setSelectedFile] = useState(null); // State to store the selected file
+
+  const registar = useRegStudent();
   const onChange = () => {
     setChecked(!checked);
   };
 
-  const navigate = useNavigate();
+  const handleSelectFile = (e) => {
+    setSelectedFile(e.target.files[0]);
+  };
 
-  const routeToNextPage = () => {
-    navigate("/login");
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      setIsLoading(true);
+
+      const formData = new FormData();
+      formData.append("file", selectedFile);
+
+      const response = await axios.post(
+        "https://api.pinata.cloud/pinning/pinFileToIPFS",
+        formData,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+            pinata_api_key: process.env.REACT_APP_PINATA_API_KEY,
+            pinata_secret_api_key: process.env.REACT_APP_PINATA_SECRET_API_KEY,
+          },
+        }
+      );
+
+      const fileUrl = `https://gateway.pinata.cloud/ipfs/${response.data.IpfsHash}`;
+      const tx = {
+        image: fileUrl,
+      };
+
+      // Call the registar function with the file URL
+      registar(tx.image);
+
+
+    } catch (error) {
+      console.log("Pinata API Error:", error);
+      setIsLoading(false)
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -30,13 +71,12 @@ const CreateProposal = () => {
                 <div className=" bg-[#2B7C5F] border-[#2B7C5F]  rounded-full w-1/2 h-2 "></div>
               </div>
               <h3 className="text-[#091913] font-normal text-base mt-2">
-                Step 1 of 3
+                Step 1 of 2
               </h3>
             </div>
           </div>
           <div>
-            <form className=" mx-20 md:28 mt-8 w-3/4">
-           
+            <form className=" mx-20 md:28 mt-8 w-3/4" onSubmit={handleSubmit}>
               <div className="mb-2">
                 <label
                   className="block text-[#06214A] text-base font-bold mb-2"
@@ -59,7 +99,7 @@ const CreateProposal = () => {
                 >
                   Password
                 </label>
-                
+
                 <input
                   className="bg-white border-[#06214A] border-2 rounded w-full py-2 px-3 text-[#020C17] leading-tight focus:outline-none focus:shadow-outline"
                   id="password"
@@ -120,13 +160,16 @@ const CreateProposal = () => {
                 >
                   Upload your Transcript
                 </label>
+
                 <input
-                  class="block w-full text-base text-[#020C17] border border-[#06214A] rounded-lg cursor-pointer bg-white dark:text-[#020C17] focus:outline-none dark:bg-white dark:border-gray-600 dark:placeholder-gray-400"
+                  className="block w-full text-base text-[#020C17] border border-[#06214A] rounded-lg cursor-pointer bg-white focus:outline-none focus:shadow-outline"
                   id="large_size"
                   type="file"
-                  placeholder="Upload"
+                  onChange={handleSelectFile} // Call handleSelectFile when file selected
+                  required
                 />
               </div>
+              {/* Checkbox */}
               <div>
                 <Checkbox
                   id="checkbox"
@@ -136,13 +179,14 @@ const CreateProposal = () => {
                   fontSize="0.5rem"
                 />
               </div>
+              {/* Submit Button */}
               <div className="mt-4">
                 <button
                   type="submit"
                   className="w-full px-8 py-2 mb-2 font-semibold rounded-lg text-white bg-[#2B7C5F] hover:bg-[#D5E5DF]"
-                  onClick={routeToNextPage}
+                  disabled={!checked || !selectedFile || isLoading} // Disable button if checkbox not checked or no file selected or loading
                 >
-                  Next
+                  {isLoading ? "Loading..." : "Next"}
                 </button>
               </div>
             </form>
