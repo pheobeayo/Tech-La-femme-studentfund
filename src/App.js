@@ -1,7 +1,7 @@
 import React from "react";
 import AllRoutes from "./config/AllRoutes";
 import { configureWeb3Modal } from "./connection";
-
+import 'reactjs-popup/dist/index.css'
 
 configureWeb3Modal();
 

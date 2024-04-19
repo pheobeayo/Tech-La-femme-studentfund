@@ -80,7 +80,7 @@ const Navbar = () => {
             <ul className="flex flex-col gap-6 sm:gap-8 text-lg">
               <li>
                 <NavLink
-                  href="/fund"
+                  href="/fund/0"
                   onClick={handleMobileMenu}
                   className="cursor-pointer"
                 >

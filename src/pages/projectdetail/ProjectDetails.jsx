@@ -3,7 +3,7 @@ import Footer from "../../components/footer/Footer";
 // import urgent from "../../assets/urgent.svg";
 // import laptop from "../../assets/laptop.svg";
 import useGetProposalById from "../../hooks/useGetProposalById";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const ProjectDetails = () => {
   const { id } = useParams();
@@ -60,9 +60,11 @@ const ProjectDetails = () => {
                     <br />
                     {proposal[10] ? "Status: Approved For Disbursement" : "Status: Pending"}
                   </h2>
-                  <button className="bg-[#2B7C5F] hover:bg-[#2B7C5F] text-white font-bold py-2 px-4 border border-[#AAAAAA] rounded w-full mt-4">
-                    Fund
-                  </button>
+                  <Link to={`/fund-modal/${id}`}>
+                    <button className="bg-[#2B7C5F] hover:bg-[#2B7C5F] text-white font-bold py-2 px-4 border border-[#AAAAAA] rounded w-full mt-4">
+                      Fund
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>

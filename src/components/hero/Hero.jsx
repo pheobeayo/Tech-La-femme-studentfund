@@ -36,7 +36,7 @@ const Hero = () => {
               </button>
             </Link>
             <Link
-              to="/fund"
+              to="/fund/0"
               style={{ textDecoration: "none", color: "#427142" }}
             >
               {" "}

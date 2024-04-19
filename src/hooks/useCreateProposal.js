@@ -34,12 +34,12 @@ const useCreateProposal = () => {
         } catch (error) {
             console.log("error :", error);
             let errorCase
-            if (errorCase) {
+            if (error.reason === "You are revoked due to offence") {
                 errorCase = "You are revoked due to offence";
-                toast.error(errorCase);
             } else {
-                toast.error("error in creating proposal!")
+                errorCase = "error in creating proposal!"
             }
+            toast.error(errorCase);
         }
     }, [navigate, walletProvider]);
 }
