@@ -1,7 +1,6 @@
 import React from "react";
 import Footer from "../../components/footer/Footer";
-// import urgent from "../../assets/urgent.svg";
-// import laptop from "../../assets/laptop.svg";
+
 import useGetProposalById from "../../hooks/useGetProposalById";
 import { Link, useParams } from "react-router-dom";
 

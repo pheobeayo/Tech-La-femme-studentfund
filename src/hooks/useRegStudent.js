@@ -31,14 +31,14 @@ const useRegStudent = () => {
                 return navigate("/login");
             }
 
-            toast.error("registeration failed!");
+            toast.error("registration failed!");
         } catch (error) {
             console.log("error :", error);
             let errorCase
             if (error.reason === "Student is already registered") {
                 errorCase = "Student is already registered!"
             } else {
-                errorCase = "error in registeration!"
+                errorCase = "error in registration!"
             }
             toast.error(errorCase);
         }

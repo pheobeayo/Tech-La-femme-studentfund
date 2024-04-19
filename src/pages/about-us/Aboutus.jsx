@@ -5,7 +5,7 @@ import About from "../../components/about/About";
 const Aboutus = () => {
   return (
     <main class="w-[100vw] h-[120vh]">
-      <section class="w-screen h-full mt-10">
+      <section class="w-screen h-full mt-20">
         <About/>
       </section>
 

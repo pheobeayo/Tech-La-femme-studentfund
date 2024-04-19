@@ -24,7 +24,7 @@ const useGetProposalById = (id) => {
                 })
             })
             .catch((err) => {
-                console.error("error fetching registeration status: ", err);
+                console.error("error fetching registration status: ", err);
                 setReg([]);
             });
     }, [address, id]);

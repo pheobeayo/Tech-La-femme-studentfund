@@ -10,7 +10,7 @@ const Home = () => {
     <main className="bg-white h-screen container mx-auto">
       <div className="container mx-auto h-full">
         <Hero />
-        <div className="mt-72">
+        <div className="mt-96">
           <How />
         </div>
         <div>

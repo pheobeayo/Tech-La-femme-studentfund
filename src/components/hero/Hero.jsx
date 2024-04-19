@@ -49,8 +49,8 @@ const Hero = () => {
       </div>
 
       <div className="grid grid-cols-2 gap-10 md:mx-48 mt-28 sm:mt-32 md:flex md:flex-row sm:flex sm:flex-row h-[90vh] w-[100vw]">
-        <img src={heroimage2} alt="heroimage1" className="md:mt-24 sm:mx-8" />
-        <img src={heroimage1} alt="heroimage2" className="md:mt-8" />
+        <img src={heroimage2} alt="heroimage1" className="md:mt-28 sm:mx-8" />
+        <img src={heroimage1} alt="heroimage2" className="md:mt-20" />
       </div>
     </section>
   );
