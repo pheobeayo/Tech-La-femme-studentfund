@@ -28,6 +28,9 @@ const Navbar = () => {
               <Link to="/create-proposal">Submit proposal</Link>
             </li>
             <li className="hidden md:inline-block  text-[#091913] font-serif">
+              <Link to="/create-proposal">Check proposal</Link>
+            </li>
+            <li className="hidden md:inline-block  text-[#091913] font-serif">
               <Link to="/about-us">About us</Link>
             </li>
           </ul>

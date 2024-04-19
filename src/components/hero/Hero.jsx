@@ -11,17 +11,17 @@ const Hero = () => {
   return (
     <section className="w-[100vw] md:w-[100%]   h-[100vh] bg-white">
       <div className="w-100 md:w-[100%] lg:p-16 p-4 h-[50vh] lg:gap-0 gap-4">
-        <div className="flex flex-col gap-4 md:mx-60">
-          <img src={stud} alt="stud" className="md:mx-72" />
+        <div className="flex flex-col gap-4 md:mx-48">
+          <img src={stud} alt="stud" className="md:mx-56" />
           <h1 className="text-[40px] md:text-[40px] font-serif font-extrabold capitalize  text-[#091913]">
             Fueling Education's Next Frontier
           </h1>
-          <h3 className="text-[20px] md:text-[18px] font-serif font-semibold text-[#091913] md:mx-32 ">
+          <h3 className="text-[20px] md:text-[18px] font-serif font-semibold text-[#091913] md:mx-28 ">
             Where Boundaries Blur and Innovations Thrive:
             <br />
             Transforming Education Through Blockchain
           </h3>
-          <div className="grid grid-cols-2 gap-8 md:mx-40">
+          <div className="grid grid-cols-2 gap-8 md:mx-40 ">
             <Link
               to={isReg ?
                 "/login"
@@ -36,7 +36,7 @@ const Hero = () => {
               </button>
             </Link>
             <Link
-              to="/fund/0"
+              to="/proposals"
               style={{ textDecoration: "none", color: "#427142" }}
             >
               {" "}
@@ -48,9 +48,9 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-10 md:mx-48 mt-16 sm:mt-32 md:flex md:flex-row sm:flex sm:flex-row h-[90vh] w-[100vw]">
+      <div className="grid grid-cols-2 gap-10 md:mx-48 mt-28 sm:mt-32 md:flex md:flex-row sm:flex sm:flex-row h-[90vh] w-[100vw]">
         <img src={heroimage2} alt="heroimage1" className="md:mt-24 sm:mx-8" />
-        <img src={heroimage1} alt="heroimage2" />
+        <img src={heroimage1} alt="heroimage2" className="md:mt-8" />
       </div>
     </section>
   );

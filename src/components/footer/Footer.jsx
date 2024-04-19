@@ -6,7 +6,7 @@ import whitelogo from "../../assets/whitelogo.svg";
 function Footer() {
   return (
     <div
-      className="px-[30px] md:px-[100px] py-[60px]
+      className="w-[100vw] px-[30px] md:px-[100px] py-[60px]
     bg-[#091913] grid grid-cols-1 md:flex md:flex-row gap-4"
     >
       <div className="md:flex flex-wrap md:flex-row justify-between w-full">

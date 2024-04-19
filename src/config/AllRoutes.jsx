@@ -23,6 +23,10 @@ const AllRoutes = () => {
   const Fund = lazy(() =>
     import("../components/modal/FundingSuccess")
   );
+  const Proposals = lazy(() =>
+  import("../components/proposal/Proposal")
+);
+
 
   return (
     <div>
@@ -38,6 +42,7 @@ const AllRoutes = () => {
               <Route path="/about-us" element={<Aboutus />} />
               <Route path="/fund/:id" element={<ProjectDetails />} />
               <Route path="/fund-modal/:id" element={<Fund />} />
+              <Route path="/proposals" elements={<Proposals/>}/>
               <Route
                 path="/student-details"
                 element={<StudentProjectDetails />}

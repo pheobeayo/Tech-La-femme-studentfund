@@ -7,7 +7,7 @@ import Hero from "../../components/hero/Hero";
 
 const Home = () => {
   return (
-    <main className="bg-white h-screen">
+    <main className="bg-white h-screen container mx-auto">
       <div className="container mx-auto h-full">
         <Hero />
         <div className="mt-72">
@@ -19,7 +19,7 @@ const Home = () => {
         <div>
           <About />
         </div>
-        <div>
+        <div className='w-screen'>
           <Footer />
         </div>
       </div>
