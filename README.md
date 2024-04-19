@@ -58,9 +58,15 @@ Documentation: https://docs.google.com/document/d/1kLM7q7anUCZrD7zCzAbdkIlJczzER
 Repo:
 https://github.com/pheobeayo/Tech-La-femme-studentfund 
 
-FundStudent contract deployed to 0x368d09842204D66e2734656789370D18E25B9B0c
+Deployed Contract:
+https://gist.github.com/nafkem/d98fd1c76f7cb2b2d142db4272a79bd8
 
-NFT contract deployed to 0xbFe441DE1f299AEaE42569A2ce66954D30AbF75A
+STUDENT_FUND_CONTRACT deployed to 0x8907eaBBa64B8f4729EB82b28ff508CCaC20c924
+
+ERC20_CONTRACT deployed to 0x368d09842204D66e2734656789370D18E25B9B0c
+
+FUNDERNFT_CONTRACT deployed to 0x3a713416811728E7Ab977C6A3E3DC20F5aC9d1c7
+
 
 Deployed Link
 https://studentfund.vercel.app/ 
