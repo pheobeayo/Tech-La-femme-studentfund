@@ -39,8 +39,7 @@ const SubmitProposal = () => {
           },
         }
       );
-
-      const fileUrl = `https://gateway.pinata.cloud/ipfs/${response.data.IpfsHash}`;
+      const fileUrl = response.data.IpfsHash;
       const tx = {
         image: fileUrl,
       };

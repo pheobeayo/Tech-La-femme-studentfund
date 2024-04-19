@@ -22,7 +22,7 @@ const Navbar = () => {
               <Link to="/">Home</Link>
             </li>
             <li className="hidden md:inline-block text-[#091913] font-serif">
-              <Link to="/fund">Fund</Link>
+              <Link to="/fund/0">Fund</Link>
             </li>
             <li className="hidden md:inline-block  text-[#091913] font-serif">
               <Link to="/create-proposal">Submit proposal</Link>

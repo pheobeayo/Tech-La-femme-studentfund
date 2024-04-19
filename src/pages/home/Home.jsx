@@ -8,18 +8,20 @@ import Hero from "../../components/hero/Hero";
 const Home = () => {
   return (
     <main className="bg-white h-screen">
-      <Hero />
-      <div className="mt-72">
-        <How />
-      </div>
-      <div>
-        <Proposal />
-      </div>
-      <div>
-        <About />
-      </div>
-      <div>
-        <Footer />
+      <div className="container mx-auto h-full">
+        <Hero />
+        <div className="mt-72">
+          <How />
+        </div>
+        <div>
+          <Proposal />
+        </div>
+        <div>
+          <About />
+        </div>
+        <div>
+          <Footer />
+        </div>
       </div>
     </main>
   );
