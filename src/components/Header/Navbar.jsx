@@ -22,13 +22,13 @@ const Navbar = () => {
               <Link to="/">Home</Link>
             </li>
             <li className="hidden md:inline-block text-[#091913] font-serif">
-              <Link to="/proposals">Fund</Link>
+              <Link to="/fund-modal/:id">Fund</Link>
             </li>
             <li className="hidden md:inline-block  text-[#091913] font-serif">
               <Link to="/create-proposal">Submit proposal</Link>
             </li>
             <li className="hidden md:inline-block  text-[#091913] font-serif">
-              <Link to="/student-details">Check proposal</Link>
+              <Link to="/fund/:id">Check proposal</Link>
             </li>
             <li className="hidden md:inline-block  text-[#091913] font-serif">
               <Link to="/about-us">About us</Link>

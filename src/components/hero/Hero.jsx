@@ -11,8 +11,8 @@ const Hero = () => {
   return (
     <section className="w-[100vw] md:w-[100%]   h-[100vh] bg-white">
       <div className="w-100 md:w-[100%] lg:p-16 p-4 h-[50vh] lg:gap-0 gap-4">
-        <div className="flex flex-col gap-4 md:mx-48">
-          <img src={stud} alt="stud" className="md:mx-56" />
+        <div className="flex flex-col gap-4 md:mx-56">
+          <img src={stud} alt="stud" className="md:mx-56 lg:mx-56" />
           <h1 className="text-[40px] md:text-[40px] font-serif font-extrabold capitalize  text-[#091913]">
             Fueling Education's Next Frontier
           </h1>
@@ -21,7 +21,7 @@ const Hero = () => {
             <br />
             Transforming Education Through Blockchain
           </h3>
-          <div className="grid grid-cols-2 gap-8 md:mx-40 ">
+          <div className="grid grid-cols-2 gap-4 md:mx-40 ">
             <Link
               to={isReg ?
                 "/login"
@@ -50,7 +50,7 @@ const Hero = () => {
 
       <div className="grid grid-cols-2 gap-10 md:mx-48 mt-28 sm:mt-32 md:flex md:flex-row sm:flex sm:flex-row h-[90vh] w-[100vw]">
         <img src={heroimage2} alt="heroimage1" className="md:mt-28 sm:mx-8" />
-        <img src={heroimage1} alt="heroimage2" className="md:mt-20" />
+        <img src={heroimage1} alt="heroimage2" className="md:mt-20 lg:mt-24" />
       </div>
     </section>
   );

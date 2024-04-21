@@ -23,7 +23,7 @@ const Proposal = () => {
         <h2 className="text-[#091913] text-3xl font-bold leading-10">
           Proposals available to be funded
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
           {loading ? (
             <h3>Loading...</h3>
           ) : proposal.length !== 0 ? (
