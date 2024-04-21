@@ -82,4 +82,4 @@ Design Prototype
 https://www.figma.com/proto/3V8HYBnx6hGTL0wvRKE4MI/StudFund?type=design&node-id=3564-878&t=BQngnKY0IxquSkao-0&scaling=min-zoom&page-id=1516%3A486&starting-point-node-id=3564%3A878 
 
 Pitch Deck Slide
-https://www.canva.com/design/DAGBdm-EWkQ/T2aJ9vflK6dAv4KrgsWc5w/edit?utm_content=DAGBdm-EWkQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+https://youtu.be/PV8CjWFqJbo?feature=shared
