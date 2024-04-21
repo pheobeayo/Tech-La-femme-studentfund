@@ -59,18 +59,24 @@ Repo:
 https://github.com/pheobeayo/Tech-La-femme-studentfund 
 
 
-Funding Contract deployed to  0xFEca0FD9691487143912eB6E9AB1c56ff2bB9a4b
+Deployed Contract Address on Morph Testnet: 
 
-Token Contract deployed to  0x4b6cD1cE3dec841088232Bf4047E35bbc91CB396
+Funding : 0xFEca0FD9691487143912eB6E9AB1c56ff2bB9a4b
 
-FUNDERNFT_CONTRACT deployed to 0x3a713416811728E7Ab977C6A3E3DC20F5aC9d1c7
+Token: 0x4b6cD1cE3dec841088232Bf4047E35bbc91CB396
+
+nft: 0x3a713416811728E7Ab977C6A3E3DC20F5aC9d1c7
+
+Onchain transaction: https://explorer-testnet.morphl2.io/address/0xC7B62c3c206e1a20dCAb1d955804394B82D89203 
+
+
 
 
 Deployed Links
 
 https://studentfund.vercel.app/ 
 
-https://studentfunding.netlify.app/
+
 
 Design Prototype
 https://www.figma.com/proto/3V8HYBnx6hGTL0wvRKE4MI/StudFund?type=design&node-id=3564-878&t=BQngnKY0IxquSkao-0&scaling=min-zoom&page-id=1516%3A486&starting-point-node-id=3564%3A878 
