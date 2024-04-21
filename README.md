@@ -69,6 +69,7 @@ FUNDERNFT_CONTRACT deployed to 0x3a713416811728E7Ab977C6A3E3DC20F5aC9d1c7
 Deployed Links
 
 https://studentfund.vercel.app/ 
+
 https://studentfunding.netlify.app/
 
 Design Prototype
