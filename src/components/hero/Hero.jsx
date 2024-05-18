@@ -10,21 +10,18 @@ const Hero = () => {
 
   return (
     
-       <div className='w-100 md:w-[100%] lg:p-16 p-4  grid lg:grid-cols-2 h-[100vh] lg:gap-0 gap-4'>
+       <div className='w-100 md:w-[100%]'>
         <div className="flex flex-col gap-4">
-          <img src={stud} alt="stud" className="md:mx-40 lg:mx-40" />
-          <h1 className="text-[40px] md:text-[40px] font-serif font-extrabold capitalize  text-[#091913]">
-            Fueling Education's Next 
+          <img src={stud} alt="stud" className="w-1/4 mt-10 mx-96 px-20" />
+          <h1 className="text-[40px] md:text-[40px] font-serif font-extrabold capitalize text-center   text-[#091913]">
+            Fueling Education's Next Frontier
           </h1>
-          <h2 className="text-[40px] md:text-[40px] font-serif font-extrabold capitalize  text-[#091913] md:mx-44 lg:mx-44">
-            Frontier
-          </h2>
-          <h3 className="text-[20px] md:text-[18px] font-serif font-semibold text-[#091913]">
+         <h3 className="text-[20px] md:text-[18px] font-serif text-center font-semibold text-[#091913]">
             Where Boundaries Blur and Innovations Thrive:
             <br />
             Transforming Education Through Blockchain
           </h3>
-          <div className="flex item-centre gap-8 ">
+          <div className="flex item-centre gap-8 md:mx-96 md:px-10">
             <Link
               to={isReg ?
                 "/login"
@@ -51,9 +48,9 @@ const Hero = () => {
         </div>
      
 
-      <div className="grid grid-cols-2 gap-0 h-max">
-        <div className="h-[300px] w-[250px] mt-36"><img src={heroimage2} alt="heroimage1" /></div>
-        <div className="h-[400px] w-[400px]"><img src={heroimage1} alt="heroimage2"  /></div>
+      <div className="grid grid-cols-2 gap-0 md:flex md:flex-row">
+        <div className="mt-44 mx-32"><img src={heroimage2} alt="heroimage1" /></div>
+        <div className="mt-20"><img src={heroimage1} alt="heroimage2"  /></div>
       </div>
       </div>
     
