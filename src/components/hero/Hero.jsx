@@ -11,8 +11,8 @@ const Hero = () => {
   return (
     
        <div className='w-100 md:w-[100%]'>
-        <div className="flex flex-col gap-4">
-          <img src={stud} alt="stud" className="w-1/4 mt-10 mx-96 px-20" />
+        <div className="flex flex-col items-center gap-4">
+          <img src={stud} alt="stud" className="w-1/4 mt-10 flex items-center" />
           <h1 className="text-[40px] md:text-[40px] font-serif font-extrabold capitalize text-center   text-[#091913]">
             Fueling Education's Next Frontier
           </h1>
@@ -21,7 +21,7 @@ const Hero = () => {
             <br />
             Transforming Education Through Blockchain
           </h3>
-          <div className="flex item-centre gap-8 md:mx-96 md:px-10">
+          <div className="flex items-center gap-8 ">
             <Link
               to={isReg ?
                 "/login"
